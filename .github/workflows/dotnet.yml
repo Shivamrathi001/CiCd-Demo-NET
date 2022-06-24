@@ -29,5 +29,6 @@ jobs:
       run: |
            cd ${{ github.workspace }}/out
            zip -r net *
-           ls ${{ github.workspace }}
+    - name: Run ls
+      run:  ls ${{ github.workspace }}
            echo '----------------------------------------------------------------'
